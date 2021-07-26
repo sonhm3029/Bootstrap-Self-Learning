@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Cards</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Card titles, text, and links</h2>
+            <p>Use <code>.card-title</code> to add card titles to any heading element. The <code>.card-text</code> class is used to remove bottom margins for a p element if it is the last child (or the only one) in card-body. The <code>.card-link</code> class adds a blue color to any link, and a hover effect.</p>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some example text. Some example text.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Card Image, Add .card-img-top or .card-img-bottom to an <img> to place the image at the top or at the bottom inside the card. Note that we have added the image outside of the .card-body to span the entire width:</h2>
+            <p>Image at the top (card-img-top):</p>
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+            <br>
+            
+            <p>Image at the bottom (card-img-bottom):</p>
+            <div class="card" style="width:400px">
+              <div class="card-body">
+                <h4 class="card-title">Jane Doe</h4>
+                <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+              <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
+        </div>
+        <div class="container">
+            <h2>Stretched Link in Card</h2>
+            <p>Add the <code>.stretched-link</code> class to a link inside the card, and it will make the whole card clickable (the card will act as a link):</p>
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+              </div>
+            </div>
+        </div>
+        
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
