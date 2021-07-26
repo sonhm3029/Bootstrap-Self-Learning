@@ -1,0 +1,40 @@
+/* .col-lg-2 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col-lg-3 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col-lg-4 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col-lg-6 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col-lg-12 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+*/
+
+div {
+    text-align: center;
+} 

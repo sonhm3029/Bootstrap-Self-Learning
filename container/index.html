@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap containers</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!-- the .container will responsive width & the .container-fluid always at 100% width -->
+        <!-- By default, containers have 15px left and right padding, with no top or bottom padding.
+        Therefore, we often use spacing utilities, such as extra padding and margins to make them look even better.
+        For example, .pt-3 means "add a top padding of 16px": -->
+        <div class="container pt-3 my-3 border">
+            <h1>First Container</h1>
+            <p>This is a container with 15px padding-left-right(pt-3) and 16px padding top and border 1px
+                margin-top-bottom: 16px (my-3)
+            </p>
+        </div>
+        <div class="container p-3 my-3 bg-dark text-white">
+            <h1>Second Container</h1>
+            <p>This is a container with 15px padding-all(p-3) and 16px padding top and no border
+                margin-top-bottom: 16px (my-3). Dark background and white text
+            </p>
+        </div>
+        <div class="container p-3 my-3 bg-primary text-white">
+            <h1>Second Container</h1>
+            <p>This is a container with 15px padding-all(p-3) and 16px padding top and no border
+                margin-top-bottom: 16px (my-3). blue background and white text
+            </p>
+        </div>
+        <!-- You can also use the .container-sm|md|lg|xl classes to create responsive containers.
+
+        The max-width of the container will change on different screen sizes/viewports:
+
+        Class	    Extra small Small   Medium  Large   Extra large
+                    <576px	    ≥576px   ≥768px  ≥992px	≥1200px
+        .container-sm	100%	540px	720px	960px	1140px
+        .container-md	100%	100%	720px	960px	1140px
+        .container-lg	100%	100%	100%	960px	1140px
+        .container-xl	100%	100%	100%	100%	1140px -->
+
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
