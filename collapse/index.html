@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Collapse</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Explain</h2>
+            <p>The <code>.collapse</code> class indicates a collapsible element (a div in our example); this is the content that will be shown or hidden with a click of a button.
+
+                To control (show/hide) the collapsible content, add the <code>data-toggle="collapse"</code> attribute to an a or a button element. Then add the <code>data-target="#id"</code> attribute to connect the button with the collapsible content <code>div id="demo"</code>.</p>
+            <p><i><strong>Note: </strong> For <a> elements, you can use the href attribute instead of the data-target attribute:</i></p>
+            <p>By default, the collapsible content is hidden. However, you can add the <code>.show</code> class to show the content by default:</p>
+            <button data-toggle="collapse" data-target="#demo">Hide</button>
+            <div id="demo" class="collapse show">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga laudantium, corporis incidunt aliquam ad modi cupiditate error omnis deserunt optio esse illo nihil et qui nulla nostrum. Repudiandae, perspiciatis quo.
+            </div>        
+        </div>
+        
+        
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
