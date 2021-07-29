@@ -8,7 +8,88 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
-        
+        <div class="container">
+            <h1>Explain</h1>
+            <p>If you want to create a simple horizontal menu, add the <code>.nav</code> class to a <code>ul</code> element, followed by <code>.nav-item</code> for each <code>li</code> and add the <code>.nav-link</code> class to their links:</p>
+            <p>Add the <code>.justify-content-center</code> class to center the nav, and the <code>.justify-content-end</code> class to right-align the nav.</p>
+            <p>Add the <code>.flex-column</code> class to create a vertical nav:</p>
+            <p>Turn the nav menu into navigation tabs with the .nav-tabs class. Add the <code>.active</code> class to the active/current link. If you want the tabs to be togglable, see the last example on this page.</p>
+            <p>Turn the nav menu into navigation pills with the <code>.nav-pills</code> class. If you want the pills to be togglable, see the last example on this page.</p>
+            <p>Justify the tabs/pills with the <code>.nav-justified</code> class (equal width):</p>
+            <ul class="nav nav-pills nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABout</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Adward</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Nav tabs with drop down</h1>
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a class=" nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class=" nav-link dropdown-toggle" data-toggle="dropdown" href="#">Story</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>togglable/ dynamic tabs</h1>
+            <p>To make the tabs toggleable, add the <code>data-toggle="tab"</code> attribute to each link. Then add a <code>.tab-pane</code> class with a unique ID for every tab and wrap them inside a <code>div</code> element with class <code>.tab-content</code>.<br>
+            If you want the tabs to fade in and out when clicking on them, add the <code>.fade</code> class to <code>.tab-pane</code>:</p>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#p1">Paragraph 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#p2">Paragraph 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#p3">Paragraph 3</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane container fade" id="home">
+                    <h2>Home</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis veritatis quidem itaque in voluptatibus hic. Qui explicabo nostrum deserunt minus, officiis, cupiditate enim aliquid porro reprehenderit fugit voluptatem veniam vero?</p>
+                </div>
+                <div class="tab-pane container fade" id="p1">
+                    <h2>paragraph 1</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis veritatis quidem itaque in voluptatibus hic. Qui explicabo nostrum deserunt minus, officiis, cupiditate enim aliquid porro reprehenderit fugit voluptatem veniam vero?</p>
+                </div>
+                <div class="tab-pane container fade" id="p2">
+                    <h2>paragraph 2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis veritatis quidem itaque in voluptatibus hic. Qui explicabo nostrum deserunt minus, officiis, cupiditate enim aliquid porro reprehenderit fugit voluptatem veniam vero?</p>
+                </div>
+                <div class="tab-pane container fade" id="p3">
+                    <h2>paragraph 3</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis veritatis quidem itaque in voluptatibus hic. Qui explicabo nostrum deserunt minus, officiis, cupiditate enim aliquid porro reprehenderit fugit voluptatem veniam vero?</p>
+                </div>
+            </div>
+        </div>
         
 
 

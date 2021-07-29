@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Navbar</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+       <header>
+           <div class="container">
+               <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+                   <ul class="navbar-nav">
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Home</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Story</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Link 1</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Link 2</a>
+                       </li>
+                   </ul>
+               </nav>
+           </div>
+       </header>
+       <div class="container">
+           <h1>Explain</h1>
+           <p>With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.
+
+            A standard navigation bar is created with the <code>.navbar</code> class, followed by a responsive collapsing class: <code>.navbar-expand-xl|lg|md|sm</code> (stacks the navbar vertically on extra large, large, medium or small screens).
+            
+            To add links inside the navbar, use a <code>ul</code> element with <code>class="navbar-nav"</code>. Then add <code>li</code> elements with a <code>.nav-item</code> class followed by an <code>a</code> element with a <code>.nav-link</code> class:</p>
+            <p>Add the <code>.justify-content-center</code> class to center the navigation bar.
+
+            The following example will center the navigation bar on medium, large and extra large screens. On small screens it will be displayed vertically and left-aligned (because of the <code>.navbar-expand-sm</code> class):</p>
+            <p><strong>Tips: </strong> Add a <strong>white</strong> text color to all links in the navbar with the <code>.navbar-dark</code>> class, or use the <code>navbar-light</code> class to add a <strong>black</strong> text color.</p>
+            <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                  </li>
+                </ul>
+            </nav> 
+        </div>
+        <div class="container">
+            <h2>Brand/ Logo</h2>
+            <p>The <code>.navbar-brand</code> class is used to highlight the brand/logo/project name of your page:</p>
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav">
+                    <a class="navbar-brand" href="#">LOGO</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <h2>Using image brand</h2>
+            <p>When using the <code>.navbar-brand</code> class on images, Bootstrap 4 will automatically style the image to fit the navbar vertically.</p>
+            <nav class="navbar navbar-expand-sm bg-dark">
+                <ul class="navbar-nav">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://www.w3schools.com/bootstrap4/bird.jpg" alt="LOGo" style="width:40px;">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <h1>Collapsed navbar</h1>
+            <p>Very often, especially on small screens, you want to hide the navigation links and replace them with a button that should reveal them when clicked on.
+
+                To create a collapsible navigation bar, use a button with <code>class="navbar-toggler"</code>, <code>data-toggle="collapse"</code> and <code>data-target="#thetarget"</code>. Then wrap the navbar content (links, etc) inside a div element with <code>class="collapse navbar-collapse"</code>, followed by an id that matches the <code>data-target</code> of the <code>button: "thetarget"</code>.</p>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">LOGO</a>
+
+                <!-- Toggler/Collapsible Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 1 </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 2 </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 3 </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <p><strong>Tip: </strong>You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+        </div>
+
+        
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
