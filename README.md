@@ -1,6 +1,6 @@
 # Bootstrap-Self-Learning
 learning bootstrap my self in w3school
-##Important components that need to notice:
+## Important components that need to notice:
 - Buttons
 - Collapse and dropdown
     * For build in collapse navbar of dropdown
