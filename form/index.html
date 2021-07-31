@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <title>Bootstrap form</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Stacked Form</h1>
+            <p>The following example creates a stacked form with two input fields, one checkbox, and a submit button.
+
+                Add a wrapper element with <code>.form-group</code>, around each form control, to ensure proper margins:</p>
+            <form action="#">
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label"></label>
+                    <input class="form-check-input" type="checkbox">Remember me
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <h1>Inline Form</h1>
+            <p>In an inline form, all of the elements are inline and left-aligned.<br>
+
+                <strong>Note:</strong> This only applies to forms within viewports that are <strong>at least 576px</strong> wide. On screens <strong>smaller than 576px</strong>, it will stack horizontally.<br>
+                
+                Additional rule for an inline form:<br>
+                
+                Add class <code>.form-inline</code> to the <code>form</code> element<br>
+                The following example creates an inline form with two input fields, one checkbox, and one submit button:</p>
+                <form class="form-inline" action="#">
+                    <div class="form-group">
+                        <label for="email">Email address: </label>
+                        <input type="email" class="form-control" placeholder="Enter email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password: </label>
+                        <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label"></label>
+                        <input class="form-check-input" type="checkbox">Remember me
+                    </div>
+                    <button class="btn btn-primary">Submit</button>
+                </form>
+        </div>
+        <div class="container">
+            <h1>Form Utilities</h1>
+            <p>The inline form above feels "compressed", and will look much better with Bootstrap's spacing utilities. The following example adds a right margin (<code>.mr-sm-2</code>) to each input on all devices (small and up). And a margin bottom class (<code>.mb-2</code>) is used to style the input field when it breaks (goes from horizontal to vertical due to not enough space/width):</p>
+            <form class="form-inline" action="#">
+                <div class="form-group">
+                    <label for="email" class="mr-sm-2">Email address: </label>
+                    <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="mr-sm-2">Password: </label>
+                    <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Enter password" id="pwd">
+                </div>
+                <div class="form-check mb-2 mr-sm-2">
+                    <label class="form-check-label"></label>
+                    <input class="form-check-input" type="checkbox">Remember me
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <h1>Form Row/grid</h1>
+            <p>You can also use columns (<code>.col</code>) to control the width and alignment of form inputs without using spacing utilities. Just remember to put them inside a <code>.row</code> container.</p>
+            <form action="/action_page.php">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                  <div class="col">
+                    <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+            <br>
+            <p>If you want less grid margins (override default column gutters), use <code>.form-row</code> instead of <code>.row</code>:</p>
+        </div>
+        <div class="container">
+            <h1>Form Validation</h1>
+            <p>You can use different validation classes to provide valuable feedback to users. Add either <code>.was-validated</code> or <code>.needs-validation</code> to the <form> element, depending on whether you want to provide validation feedback before or after submitting the form. The input fields will have a green (valid) or red (invalid) border to indicate what's missing in the form. You can also add a <code>.valid-feedback</code> or <code>.invalid-feedback</code> message to tell the user explicitly what's missing, or needs to be done before submitting the form.</p>
+            <form action="/action_page.php" class="was-validated">
+                <div class="form-group">
+                  <label for="uname">Username:</label>
+                  <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Check this checkbox to continue.</div>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <form action="/action_page.php" class="needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="uname">Username:</label>
+                  <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Check this checkbox to continue.</div>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            // Disable form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+        </script>
+    </body>
+</html>
