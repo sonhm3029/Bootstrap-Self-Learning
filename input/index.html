@@ -40,6 +40,123 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
+        <div class="container">
+            <h1>Bootstrap checkbox</h1>
+            <p>Use a wrapper element with <code>class="form-check"</code> to ensure proper margins for labels and checkboxes.
+
+                Add the <code>.form-check-label</code> class to label elements, and <code>.form-check-input</code> to style checkboxes properly inside the <code>.form-check container</code>.</p>
+            <p>Use the <code>.form-check-inline</code> class if you want the checkboxes to appear on the same line:</p>
+            <form action="/action_page.php">
+                <div class="form-check">
+                  <label class="form-check-label" for="check1">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Option 1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label" for="check2">
+                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Option 2
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" disabled>Option 3
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <h1>Bootstrap radio button</h1>
+            <p>Radio buttons are used if you want to limit the user to just one selection from a list of preset options.
+
+                The following example contains three radio buttons. The last option is disabled:</p>
+            <p>As with checkboxes, use the <code>.form-check-inline</code> class if you want the radio buttons to appear on the same line:</p>
+            <form action="/action_page.php">
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio1">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label" for="radio2">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" disabled>Option 3
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <h1>Bootstrap select list</h1>
+            <p></p>
+            <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="sel1">Select list (select one):</label>
+                  <select class="form-control" id="sel1" name="sellist1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                  <br>
+                  <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+                  <select multiple class="form-control" id="sel2" name="sellist2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <h2>Form Control Sizing</h2>
+            <p>Change the size of the form control with .form-control-sm or .form-control-lg:</p>
+            <form action="/action_page.php">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-sm" placeholder="Small form control" name="text1">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Default form control" name="text2">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" placeholder="Large form control" name="text3">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="container">
+            <h2>Form Control Plain Text</h2>
+            <p>Use the .form-control-plaintext if you want to style the input field as plain text:</p>
+            <form action="/action_page.php">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Default form control" name="text1">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control-plaintext" placeholder="Form control with plain text" name="text2">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="container">
+            <h2>Form Control Range and File</h2>
+            <p>Add the .form-control-range class to input type"range" or .form-control-file to input type"file" to style a range control or a file field with full-width:</p>
+            <form action="/action_page.php">
+              <div class="form-group">
+                <input type="range" class="form-control-range" name="range">
+              </div>
+              <div class="form-group">
+                <input type="file" class="form-control-file border" name="file">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
