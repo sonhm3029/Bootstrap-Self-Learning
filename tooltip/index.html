@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap tooltip</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Tooltip</h1>
+            <p>The Tooltip component is small pop-up box that appears when the user moves the mouse pointer over an element:
+
+                Hover over me</p>
+            <p>To create a tooltip, add the <code>data-toggle="tooltip"</code> attribute to an element.
+
+                Use the <code>title</code> attribute to specify the text that should be displayed inside the tooltip:</p>
+            <p>By default, the tooltip will appear on top of the element.
+
+                Use the <code>data-placement</code> attribute to set the position of the tooltip on <strong>top, bottom, left or the right</strong> side of the element:</p>
+          </div>
+          <div class="container">
+            <h3>Tooltip Example</h3>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover over me</a>
+          </div>
+          
+          
+          
+        
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+    </body>
+</html>
