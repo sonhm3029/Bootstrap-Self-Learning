@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Flex</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>CSS flexbox layout module</h1>
+            <p>Before the Flexbox Layout Moudule, there were four layout modes:</p>
+            <ul>
+                <li>Block, for sections in a webpage</li>
+                <li>Inline, for text</li>
+                <li>Table, for two-dimentional table data</li>
+                <li>Positioned, for explicit position of an element</li>
+            </ul>
+            <p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</p>
+        </div>
+        <div class="container">
+            <h2>Flex container</h2>
+            <p>This is a flex container (the blue area) with three flex items by using class <code>.flex-container</code>:</p>
+            <p>The flex container becomes flexible by setting the <code>display</code> property to <code>flex</code>:</p>
+            <div class="flex-container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Flex container properties</h2>
+            <ul>
+                <li><a href="#flexDi">flex-direction</a></li>
+                <li><a href="#flexWrap">flex-wrap</a></li>
+                <li><a href="#flexFlow">flex-flow</a></li>
+                <li><a href="#justify">justify-content</a></li>
+                <li><a href="#align-item">align-items</a></li>
+                <li><a href="#">align-content</a></li>
+            </ul>
+            <div id="flexDi">
+                <h2>Flex Direction</h2>
+                <p>The <code>flex-direction</code> property defines in which direction the container wants to stack the flex items.</p>
+                <p>The <code>flex-direction:column</code> stacks the flex items vertically (from top to bottom):</p>
+                <p>The <code>column-reverse</code> value stacks the flex items vertically (but from bottom to top):</p>
+                <div class="flex-container" id="flex-container2">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <p>And <code>flex-direction:row/row-reverse</code> is the same</p>
+            </div>
+            <div id="flexWrap">
+                <h2>Flex wrap</h2>
+                <p>The <code>flex-wrap:wrap/nowrap</code> property specifies whether the flex items should wrap or not. when resize the screen</p>
+                <p>The <code>flex-wrap:wrap-reverse</code> value specifies that the flexible items will wrap if necessary, in reverse order:</p>
+                <div class="flex-container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>  
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>  
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>  
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>  
+                </div>
+            </div>
+            <div id="flexFlow">
+                <h2>Flex flow</h2>
+                <p>The <code>flex-flow: row wrap</code> property is a shorthand property for setting both the flex-direction and flex-wrap properties.</p>
+            </div>
+            <div id="justify">
+                <h2>Justify content</h2>
+                <p>The <code>justify-content: center/flex-start/flex-end/space-around/space-between</code> property is used to align the flex items:</p>
+                <h3>flex-start</h3>
+                <div class="flex-container flex-start">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <h3>flex-end</h3>
+                <div class="flex-container flex-end">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <h3>space-between</h3>
+                <div class="flex-container space-between">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <h3>space-around</h3>
+                <div class="flex-container space-around">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <h3>center</h3>
+                <div class="flex-container center">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+            <div id="align-item">
+                <h2>Align-item</h2>
+                <p><code>align-item: center/ flex-start/ flex-end/ strech/ baseline</code></p>
+                <h3>flex-start</h3>
+                <div class="flex-container a-start">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <h3>flex-end</h3>
+                <div class="flex-container a-end">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <h3>stretch</h3>
+                <div class="flex-container stretch">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <h3>baseline</h3>
+                <div class="flex-container baseline">
+                    <div><h1>1</h1></div>
+                    <div><h6>2</h6></div>
+                    <div><h3>3</h3></div>  
+                    <div><small>4</small></div> 
+                </div>
+                <h3>center</h3>
+                <div class="flex-container a-center">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="text-center">SUMMARY</h1>
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>align-content</td>
+                        <td>Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines</td>
+                    </tr>
+                    <tr>
+                        <td>align-items</td>
+                        <td>Vertically aligns the flex items when the items do not use all available space on the cross-axis</td>
+                    </tr>
+                    <tr>
+                        <td>display</td>
+                        <td>	Specifies the type of box used for an HTML element</td>
+                    </tr>
+                    <tr>
+                        <td>flex-direction</td>
+                        <td>	Specifies the direction of the flexible items inside a flex container</td>
+                    </tr>
+                    <tr>
+                        <td>flex-flow</td>
+                        <td>A shorthand property for flex-direction and flex-wrap</td>
+                    </tr>
+                    <tr>
+                        <td>flex-wrap</td>
+                        <td>Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line</td>
+                    </tr>
+                    <tr>
+                        <td>justify-content</td>
+                        <td>	Horizontally aligns the flex items when the items do not use all available space on the main-axis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
