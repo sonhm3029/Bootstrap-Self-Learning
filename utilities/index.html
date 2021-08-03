@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap utilities</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .border {
+              display: inline-block;
+              width: 70px;
+              height: 70px;
+              margin: 6px;
+            }
+            span {
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 6px;
+                background-color: #555;
+  }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Border</h1>
+            <p>Use the <code>border</code> classes to add or remove borders from an element:</p>
+            <span class="border"></span>
+            <span class="border border-0"></span>
+            <span class="border border-top-0"></span>
+            <span class="border border-right-0"></span>
+            <span class="border border-bottom-0"></span>
+            <span class="border border-left-0"></span>
+            <p>Add rounded corners to an element with the <code>rounded</code> classes:</p>
+            <span class="rounded-sm"></span>
+            <span class="rounded"></span>
+            <span class="rounded-lg"></span>
+            <span class="rounded-top"></span>
+            <span class="rounded-right"></span>
+            <span class="rounded-bottom"></span>
+            <span class="rounded-left"></span>
+            <span class="rounded-circle"></span>
+            <span class="rounded-0"></span>
+        </div>
+        <div class="container">
+            <h2>Float</h2>
+            <p>Float an element to the right with the .float-right class or to the left with .float-left, and clear floats with the .clearfix class.</p> 
+            <div class="clearfix">
+              <span class="float-left">Float left</span>
+              <span class="float-right">Float right</span>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Responsive Floats</h2>
+            <p>Float an element to the left or to the right depending on screen width, with the responsive float classes <code>.float-*-left|right</code> (<strong>where * is sm, md, lg or xl</strong>).</p>
+            <p>Resize the browser window to see the effect.</p> 
+            <div class="clearfix">
+              <div class="float-sm-right">Float right on small screens or wider</div><br>
+              <div class="float-md-right">Float right on medium screens or wider</div><br>
+              <div class="float-lg-right">Float right on large screens or wider</div><br>
+              <div class="float-xl-right">Float right on extra large screens or wider</div><br>
+              <div class="float-none">Float none</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Horizontal Centering</h1>
+            <p>Center an element with the <code>.mx-auto</code> class:</p>
+            <div class="mx-auto bg-warning" style="width:150px">Centered</div>
+        </div>
+        <div class="container">
+            <h1>Width Utilities</h1>
+            <p>Set the width of an element with the <code>w-*</code> classes:</p>
+            <div style="background-color: cornflowerblue;">
+                <div class="w-25 bg-warning">Width 25%</div>
+                <div class="w-50 bg-warning">Width 50%</div>
+                <div class="w-75 bg-warning">Width 75%</div>
+                <div class="w-100 bg-warning">Width 100%</div>
+                <div class="mw-100 bg-warning">Max Width 100%</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Height Utilities</h1>
+            <p>Set the height of an element with the w-* classes:</p>
+            <div style="height:200px;background-color:#ddd">
+              <div class="h-25 d-inline-block p-2 bg-warning">Height 25%</div>
+              <div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
+              <div class="h-75 d-inline-block p-2 bg-warning">Height 75%</div>
+              <div class="h-100 d-inline-block p-2 bg-warning">Height 100%</div>
+              <div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">Max Height 100%</div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Spacing</h2>
+            <p>Bootstrap 4 has a wide range of responsive margin and padding utility classes. They work for all breakpoints: <code>xs (<=576px), sm (>=576px), md (>=768px), lg (>=992px) or xl (>=1200px))</code></p>
+            The classes are used in the format: <code>{property}{sides}-{size}</code> for <code>xs</code> and <code>{property}{sides}-{breakpoint}-{size}</code> for<code> sm, md, lg, and xl</code>.
+            <p>Where <i>property</i> is one of</p>
+            <ul>
+                <li><code>m</code> - sets <code>margin</code></li>
+                <li><code>p</code> - sets <code>padding</code></li>
+            </ul>
+            <p>Where <i>sides</i> is one of</p>
+            <ul>
+                <li><code>t</code> - sets <code>margin-top or padding-top</code></li>
+                <li><code>b</code> - sets <code>margin-bottom or padding-bottom</code></li>
+                <li><code>l</code> - sets <code>margin-left or padding-left</code></li>
+                <li><code>r</code> - sets <code>margin-right or padding-right</code></li>
+                <li><code>x</code> - sets <code>both padding-left and padding-right or margin-left and margin-right</code></li>
+                <li><code>y</code> - sets <code>both padding-top and padding-bottom or margin-top and margin-bottom</code></li>
+                <li>blank - sets a margin or padding on all 4 sides of the element</li>
+            </ul>
+            <p>Where <i>size</i> is one of</p>
+            <ul>
+                <li><code>0</code>- sets <code>margin</code> or <code>padding</code> to <code>0</code></li>
+                <li><code>1</code> - sets <code>margin</code> or <code>padding</code> to <code>.25rem</code> (4px if font-size is 16px)</li>
+                <li><code>2</code> - sets <code>margin</code> or <code>padding</code> to <code>.5rem </code>(8px if font-size is 16px)</li>
+                <li><code>3</code> - sets <code>margin</code> or <code>padding</code> to <code>1rem </code>(16px if font-size is 16px)</li>
+                <li><code>4</code> - sets <code>margin</code> or <code>padding</code> to <code>1.5rem </code>(24px if font-size is 16px)</li>
+                <li><code>5</code> - sets <code>margin</code> or <code>padding</code> to <code>3rem </code>(48px if font-size is 16px)</li>
+                <li><code>auto</code> - sets <code>margin</code> to <code>auto</code></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Shadows</h1>
+            <p>Use the <code>shadow-</code> classes to to add shadows to an element:</p>
+            <div class="shadow-none p-4 mb-4 bg-light">shadow-none</div>
+            <div class="shadow-sm p-4 mb-4 bg-white">shadow-sm</div>
+            <div class="shadow p-4 mb-4 bg-white">shadow</div>
+            <div class="shadow-lg p-4 mb-4 bg-white">shadow-lg</div>
+          </div>
+        <div class="container">
+            <h1>Vertical Align</h1>
+            <p>Change the alignment of elements with the <code>align-</code> classes (only works on inline, inline-block, inline-table and table cell elements):</p>
+            <span class="align-baseline">baseline</span>
+            <span class="align-top">top</span>
+            <span class="align-middle">middle</span>
+            <span class="align-bottom">bottom</span>
+            <span class="align-text-top">text-top</span>
+            <span class="align-text-bottom">text-bottom</span>
+        </div> 
+        <div class="container">
+            <h2>Responsive emmbeded</h2>
+            <p>Create responsive video or slideshow embeds based on the width of the parent.
+            Add the <code>.embed-responsive-item</code> to any embed elements (like <code>iframe</code> or <code>video</code>) in a parent element with <code>.embed-responsive</code> and an aspect ratio of your choice:</p>
+            <iframe width="1264" height="480" src="https://www.youtube.com/embed/xB2qsCnqAXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2> Aspect ratio 1:1</h2>
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xB2qsCnqAXA"></iframe>
+            </div>
+            <h2>Aspect ratio 4:3</h2>
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xB2qsCnqAXA"></iframe>
+            </div> 
+            <br>
+            <h2>Aspect ratio 16:9</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xB2qsCnqAXA"></iframe>
+            </div> 
+            <br>
+            <h2>Aspect ratio 21:9</h2>
+            <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xB2qsCnqAXA"></iframe>
+            </div> 
+            <br>
+            <h2>Block Element</h2>
+            <p>To make an element into a block element, add the <code>.d-block</code> class. Use any of the <code>d-*-block</code> classes to control WHEN the element should be a block element on a specific screen width:</p>
+        </div>
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
